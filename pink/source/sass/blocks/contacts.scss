@@ -1,0 +1,41 @@
+
+.contacts{
+    background-image: url("/img/mob/map.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 200px;
+}
+.contacts__title {
+    font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 120%;
+text-align: center;
+padding-top: 50px;
+margin-bottom: 50px;
+}
+.contacts__list {
+    text-align: center;
+   
+}
+.contacts__item {
+    margin-bottom: 31px;
+}
+.contacts__caption {
+    font-weight: 700;
+font-size: 18px;
+line-height: 25px;
+margin-bottom: 13px;
+}
+.contacts__link {
+    font-weight: 300;
+font-size: 24px;
+line-height: 33px;
+color: red;
+
+text-align: center;
+}
+.contacts__img{
+    margin-top: -10px;
+    display: block;
+}

@@ -1,3 +1,29 @@
-body{
-    background-color: aquamarine;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.btn{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 18px;
+color: inherit;
+border: 3px solid #FFFFFF;
+border-radius: 29px;
+// padding: 21px 38px;
+text-align: center;
+cursor: pointer;
+box-sizing: border-box;
 }

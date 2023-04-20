@@ -2,6 +2,21 @@
 @import "global/global.scss";
 @import "global/normalaze.scss";
 @import "global/fonts.scss";
+@import "global/reset.scss";
+@import "global/mixin.scss";
 
 
 //block
+@import "blocks/page__body.scss";
+@import "blocks/page-header.scss";
+@import "blocks/promo__wrapper.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/offer.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/contacts.scss";
+@import "blocks/advantage__price.scss";
+@import "blocks/advantage.scss";
+@import "blocks/advantage-revievs.scss";
+@import "blocks/catalog.scss"; 
+@import "blocks/revievs-catalog.scss";
+
