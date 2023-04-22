@@ -1,3 +1,92 @@
-.revievs-catalog{
+.revievs-catalog {
     padding-top: 54px;
 }
+
+.revievs__subtitle {
+    padding-bottom: 60px;
+}
+
+.revievs-catalog__list {
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.revievs-catalog__item {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.revievs-catalog__img {}
+
+.revievs-catalog__container {
+    display: flex;
+    align-items: center;
+    
+}
+
+.revievs-catalog__item--hit {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 25px 10px 25px 17px;
+    background-color: #F2F2F2;
+}
+
+.revievs-item__wrapper {
+    padding: 25px 10px 25px 17px;
+    margin-bottom: 20px;
+    background-color: #F2F2F2;
+}
+
+.revievs-catalog__title {
+    padding-right: 3px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.revievs-catalog__subtitle {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.revievs-catalog__text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 27px;
+    margin-top: 14px;
+    display: block;
+}
+
+.revievs-catalog__like {
+    margin-right: 18px;
+    width: 15px;
+    height: 15px;
+    background-image: url(/img/heart.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.revievs-catalog__like-text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: red;
+    text-transform: uppercase;
+    padding-left: 3px ;
+}
+
+.revievs-catalog__like-number {}
