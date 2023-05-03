@@ -1,0 +1,122 @@
+.form-offer__wrapper {
+    padding: 36px 46px;
+
+}
+
+.form {
+    background-size: cover;
+}
+
+//forms
+
+
+.form-page__title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 54px 20px 0 20px;
+    text-align: center;
+}
+
+.form-page__offer {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: red;
+    margin-left: 23px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+
+    &--title {
+        margin: 0;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    &--textform {
+        margin-bottom: 0px;
+    }
+}
+.form__page-submit-title{
+    margin: 50px 0 0 0;
+    padding: 0;
+    text-align: center;
+    color:  #283645;
+    & span{
+        color: red;
+    }
+}
+
+.form-page__label {
+    margin-bottom: 47px;
+    display: block;
+
+    &--uzer {
+        margin-bottom: 13px;
+    }
+}
+
+.form-page__input {
+    width: 276px;
+    height: 59px;
+    box-sizing: border-box;
+    border: 2px solid #E5E5E5;
+    border-radius: 1px;
+    padding-left: 20px;
+
+    &--textarea {
+        height: 197px;
+    }
+
+}
+
+input[placeholder] {
+    text-overflow: ellipsis;
+    vertical-align: top;
+    
+}
+::-webkit-input-placeholder{
+    vertical-align: top;
+    text-align: start;
+}
+.form__page-wrapper-white {
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 45px;
+}
+
+.form__page-wrapper-grey {
+    background-color: #F2F2F2;
+    padding-top: 42px;
+    padding-bottom: 45px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.form-page__cheek {
+    padding-left: 30px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+.form__btn{
+    background: #2AAB6D;
+    border: 2px solid #2AAB6D;
+    border-radius: 4px;
+    color: white;
+    font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 30px;
+text-transform: uppercase;
+width: 276px;
+height: 59px;
+text-align: center;
+}

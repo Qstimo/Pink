@@ -3,12 +3,30 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    justify-content: space-around;
+    justify-content: space-between;
+    height: 66px;
+    align-items: center;
+    padding: 0 20PX 0 20px;
+    @media (min-width: 665px){
+        height: 110px;
+    }
 }
 
 .page-header__logo {
-    margin: 20px;
-    margin-right: 156px;
+    
+    
+    background-image: url(/img/logo.svg);
+    height: 23px;
+    width: 74px;
+    background-repeat: no-repeat;
+    background-position: center;
+    @media (min-width: 665px){
+        height: 100px;
+        width: 147px;
+        background-image: url(/img/TABLET/android-logo.svg);
+        background-position: 50% 35%;
+
+    }
 }
 
 

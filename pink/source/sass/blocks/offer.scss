@@ -1,17 +1,36 @@
 .offer {
     color: white;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 665px) {
+        width: 320px;
+    }
 }
 
 .offer__wrapper {
-    min-height: 400px;
+
     padding-left: 40px;
     padding-right: 40px;
+    padding-bottom: 320px;
     background-image: url(/img/mob/hands.png);
     background-repeat: no-repeat;
-    background-position: bottom;
-    margin-bottom: 30px;
-    & .offer__title{
+    background-position: 50% 90%;
+
+    & .offer__title {
         padding-top: 30px;
+    }
+
+    @media (min-width: 665px) {
+        background-image: none;
+        padding: 0;
+
+        & .offer__title {
+            padding: 60px 50px 40px 50px;
+            font-weight: 300;
+            font-size: 40px;
+            line-height: 120%;
+        }
     }
 }
 
@@ -22,7 +41,17 @@
     font-size: 24px;
     line-height: 29px;
     color: white;
-   
+
+
+}
+
+.offer-download {
+
+    color: white;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: CENTER;
 
 }
 
@@ -30,7 +59,6 @@
     width: 280px;
     padding: 16px;
     display: inline-block;
-    margin-left: 20px;
     margin-bottom: 32px;
 
 }
@@ -58,4 +86,8 @@
     margin-bottom: 38px;
     padding: 0 40px;
     display: inline-block;
+    @media (min-width: 665px){
+    font-size: 18px;
+    padding: 0;
+    }
 }

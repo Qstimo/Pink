@@ -15,6 +15,16 @@ font-size: 24px;
 line-height: 120%;
 margin-top: 46px;
 text-align: center;
+color: #283645;
+@media (min-width: 665px){
+    font-size: 40px;
+    font-weight: 300;
+   
+    &+p{
+        padding: 0 100px;
+        margin: 0;
+    }
+}
 }
 
 .advantage-items__list {
@@ -30,7 +40,8 @@ text-align: center;
     padding: 0 20px;
 }
 
-.advantage-items__title {font-style: normal;
+.advantage-items__title {
+    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;

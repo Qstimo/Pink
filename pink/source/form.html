@@ -9,7 +9,7 @@
   </head>
   <body class="page__body">
     <main class="page-main">
-      <div class="promo__wrapper">
+      <div class="promo__wrapper form">
         <header class="page-header">
           <a href="" class="page-header__logo">
             <img
@@ -23,8 +23,8 @@
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <nav class="main-nav">
-            <div class="main-nav__wrapper">
+          <nav class="main-nav main-nav__wrapper">
+            
               <ul class="main-nav__list">
                 <li class="main-nav__item">
                   <a class="main-nav__link"> Главная </a>
@@ -39,208 +39,173 @@
                   <a href="#" class="main-nav__link"> HTML Academy </a>
                 </li>
               </ul>
-            </div>
+            
           </nav>
         </header>
-
-        <h1 class="visually-hidden">Pink меняет взгляд на жизнь</h1>
-        <section class="offer">
-          <div class="offer__wrapper">
-            <h2 class="offer__title">Взгляните на жизнь иначе!</h2></div>
-            <div class="offer-download">
-              <a class="offer-download__button btn">Скачать приложение</a>
-              <ul class="offer-download__list">
-                <li class="offer-download__item">
-                  <a
-                    href="#"
-                    class="offer-download__link offer-download__link--iphone"
-                    ><img src="/img/apple-logo.svg" alt="" /><span
-                      class="visually-hidden"
-                      >Загрузка на iphone</span
-                    ></a
-                  >
-                </li>
-                <li class="offer-download__item">
-                  <a
-                    href="#"
-                    class="offer-download__link offer-download__link--android"
-                    ><img src="/img/android-logo.svg" alt="" /><span
-                      class="visually-hidden"
-                      >Загрузка на android</span
-                    ></a
-                  >
-                </li>
-                <li class="offer-download__item">
-                  <a
-                    href="#"
-                    class="offer-download__link offer-download__link-win"
-                    ><img src="/img/microsoft-logo.svg" alt="" /><span
-                      class="visually-hidden"
-                      >Загрузка на win</span
-                    ></a
-                  >
-                </li>
-              </ul>
-              <p class="offer-download__subtitle">
-                Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows
-                8
-              </p>
-            </div>
-          
-        </section>
+        <div class="form-offer__wrapper">
+          <h2 class="offer__title">
+            Конкурс на самое безбашенное путешествие с Пинк
+          </h2>
+        </div>
       </div>
-      <section class="advantage">
-        <div class="advantage__container-bg">
-          <div class="advantage__wrapper">
-            <h2 class="advantage__title">Устали от серости мегаполиса?</h2>
-            <p class="advantage__title">Нам есть, что вам предложить!</p>
-            <div class="advantage-items__wrapper">
-              <ul class="advantage-items__list">
-                <li class="advantage-items__item advantage-items__item--mood">
-                  <p class="advantage-items__title">Поднимает настроение</p>
-                  <p class="advantage-items__subtitle">
-                    Приложение позволит вам победить осеннюю хандру и депрессию
-                    буквально в несколько кликов!
-                  </p>
-                </li>
-                <li class="advantage-items__item advantage-items__item--world">
-                  <p class="advantage-items__title">Меняет мир вокруг</p>
-                  <p class="advantage-items__subtitle">
-                    Сделайте снимок и украсьте его смайликом или текстовой
-                    подписью, чтобы усилить эффект
-                  </p>
-                </li>
-                <li class="advantage-items__item advantage-items__item--friend">
-                  <p class="advantage-items__title">Заводит новых друзей</p>
-                  <p class="advantage-items__subtitle">
-                    Ставьте лайки, комментируйте, делитесь фотографиями с
-                    друзьями и заводите новых
-                  </p>
-                </li>
-              </ul>
-              <div class="advantage__img">
-                <img src="./img/mob/iphone.png" alt="" />
-              </div>
+      <section class="form-pade">
+        <div class="form__page-wrapper">
+          <h2 class="form-page__title">
+            Поделитесь своей историей и получите шанс выиграть ценный приз —
+            1000 миль на вашу бонусную карту!
+          </h2>
+          <form action="#" method="post">
+            <div class="form__page-wrapper-white">
+              <label for="name" class="form-page__label form-page__label--uzer"
+                ><p class="form-page__offer">ФАМИЛИЯ:</p>
+                <input
+                  class="form-page__input"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Укажите фамилию *"
+                />
+              </label>
+              <label for="family" class="form-page__label form-page__label--uzer"
+                ><p class="form-page__offer">ИМЯ:</p>
+                <input
+                  class="form-page__input"
+                  type="text"
+                  name="family"
+                  id="family"
+                  placeholder="Введите ваше имя *"
+                />
+              </label>
+              <label for="firstname" class="form-page__label form-page__label--uzer"
+                ><p class="form-page__offer">ОТЧЕСТВО:</p>
+                <input
+                  class="form-page__input"
+                  type="text"
+                  name="firstname"
+                  id="firstname"
+                  placeholder="Ну и отчество тоже"
+                />
+              </label>
             </div>
-            <div class="advantage-stats">
-              <h2 class="advantage-stats__title">Эффект на 24 часа!</h2>
-              <p class="advantage-stats__promo">
-                Британские ученые провели исследования и доказали, что
-                положительный эффект от использования приложения длится целые
-                сутки!
+            <div class="form__page-wrapper-grey">
+              <p class="form-page__offer form-page__offer--title">
+                Ваши безбашенные достижения в путешествии
               </p>
-              <a href="" class="advantage-stats__link"
-                >Узнать больше об исследовании</a
-              >
+              <label for="selfi" class="form-page__label">
+                <input
+                  type="checkbox"
+                  checked
+                  value="Сделал селфи с акулой"
+                  id="selfi"
+                />
+                <span class="form-page__cheek"> Сделал селфи с акулой</span>
+              </label>
+              <label for="beach" class="form-page__label">
+                <input
+                  type="checkbox"
+                  checked
+                  value="Обгорел на пляже"
+                  id="beach"
+                />
+                <span class="form-page__cheek"> Обгорел на пляже</span>
+              </label>
+              <label for="norris" class="form-page__label">
+                <input
+                  type="checkbox"
+                  checked
+                  value="Видел Чака Норриса"
+                  id="norris"
+                />
+                <span class="form-page__cheek"> Видел Чака Норриса</span>
+              </label>
+              <label for="suvenir" class="form-page__label">
+                <input
+                  type="checkbox"
+                  
+                  value="Видел Чака Норриса"
+                  id="suvenir"
+                />
+                <span class="form-page__cheek"> Накупил сувениров</span>
+              </label>
+              <label for="tower" class="form-page__label">
+                <input
+                  type="checkbox"
+                  checked
+                  value="Удержал башню"
+                  id="tower"
+                />
+                <span class="form-page__cheek"> Удержал башню</span>
+              </label>
+              <label for="hotel" class="form-page__label">
+                <input
+                  type="checkbox"
+                  
+                  value="Разгромил отель"
+                  id="hotel"
+                />
+                <span class="form-page__cheek"> Разгромил отель</span>
+              </label>
             </div>
-          </div>
-        </div>
-        <div class="advantage-revievs">
-          <div class="revievs">
-            <ul class="revievs__list slider__list">
-              <li class="revievs__item slider__item">
-                <h3 class="revievs__title">Николай Петров</h3>
-                <span class="revievs__title--text"
-                  >25 лет, водитель трамвая</span
-                >
-                <p class="revievs__subtitle">
-                  «Это приложение перевернуло мой мир и позволило по-новому
-                  взглянуть на привычные серые вещи! А еще я познакомился со
-                  своей будущей женой в комментариях к выложенной фотографии!»
-                </p>
-              </li>
-            </ul>
-            <p class="revievs__toggles slider__toggles">
-              <button
-                class="slider__toggle slider__toggle--current"
-                type="button"
-              ></button
-              ><button class="slider__toggle" type="button"></button
-              ><button class="slider__toggle" type="button"></button>
-            </p>
-          </div>
-        </div>
-        <div class="bg">
-          <div class="advantage__price">
-            <div class="price">
-              <div class="price__table slider__list">
-                <div class="price__column slider__item">
-                  <div class="price__row">
-                    <p class="price__title"></p>
-                    <p class="price__subtitle"></p>
-                  </div>
-                  <p class="price__box">Розовый фильтр</p>
-                  <p class="price__box">Смайлики</p>
-                  <p class="price__box">Комментарии</p>
-                </div>
-                <div class="price__column slider__item">
-                  <div class="price__row">
-                    <p class="price__title">База</p>
-                    <p class="price__subtitle">1,99 USD</p>
-                  </div>
-                  <p class="price__box price__box--true"></p>
-                  <p class="price__box price__box--false"></p>
-                  <p class="price__box price__box--false"></p>
-                </div>
-                <div class="price__column slider__item">
-                  <div class="price__row price__row--hit">
-                    <p class="price__title">СТАНДАРТ</p>
-                    <p class="price__subtitle">3,99 USD</p>
-                  </div>
-                  <p class="price__box price__box--true"></p>
-                  <p class="price__box price__box--true"></p>
-                  <p class="price__box price__box--false"></p>
-                </div>
-                <div class="price__column slider__item">
-                  <div class="price__row">
-                    <p class="price__title">АНЛИМ</p>
-                    <p class="price__subtitle">9,99 USD</p>
-                  </div>
-                  <p class="price__box price__box--true"></p>
-                  <p class="price__box price__box--true"></p>
-                  <p class="price__box price__box--true"></p>
-                </div>
-              </div>
-              <p class="price__toggles slider__toggles">
-                <button class="slider__toggle" type="button"></button
-                ><button
-                  class="slider__toggle slider__toggle--current"
-                  type="button"
-                >
-                  2</button
-                ><button class="slider__toggle" type="button">3</button>
+            <div class="form__page-wrapper-white">
+              <label class="form-page__label form-page__label--uzer" for="phone"><p class="form-page__offer">НОМЕР ТЕЛЕФОНА</p>
+                <input class="form-page__input" name="phone" type="tel" placeholder="Номер, пожалуйста" id="phone">
+              </label>
+              <label class="form-page__label form-page__label--uzer" for="mail" ><p class="form-page__offer">АДРЕС ПОЧТЫ</p>
+                <input class="form-page__input" name="mail" type="email" placeholder="Введите почту *" id="mail">
+              </label>
+            </div>
+            <div class="form__page-wrapper-grey">
+              <p class="form-page__offer form-page__offer--title">
+                С каким приложением
+путешествовали?
               </p>
+              <label for="ios" class="form-page__label">
+                <input
+                  type="radio"
+                  checked
+                  value="Pink для iOS"
+                  id="ios"
+                />
+                <span class="form-page__cheek"> Pink для iOS</span>
+              </label>
+                <label for="Android" class="form-page__label">
+                  <input
+                    type="radio"
+                    
+                    value="Pink на Android"
+                    id="Android"
+                  />
+                  <span class="form-page__cheek"> Pink на Android</span>
+                </label>
+                <label for="win" class="form-page__label">
+                  <input
+                    type="radio"
+                    
+                    value="Windows Phone"
+                    id="win"
+                  />
+                  <span class="form-page__cheek"> Windows Phone</span>
+                </label>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="contacts">
-        <div class="contacts__wrapper">
-          <h3 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h3>
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <p class="contacts__caption">Звоните:</p>
-              <a href="tel:+7 (812) 555-66-66" class="contacts__link"
-                >+7 (812) 555-66-66</a
-              >
-            </li>
-            <li class="contacts__item">
-              <p class="contacts__caption">Приезжайте в гости:</p>
-              <a href="#" class="contacts__link"
-                >ул. Большая <br />Конюшенная, 19/8</a
-              >
-            </li>
-            <li class="contacts__item">
-              <p class="contacts__caption">Пишите:</p>
-              <a href="mail:mail@htmlacademy.ru" class="contacts__link"
-                >mail@htmlacademy.ru</a
-              >
-            </li>
-          </ul>
-          <!-- <img src="/img/mob/map.png" class="contacts__img" alt="путь до нас"> -->
+            <div class="form__page-wrapper-white">
+               <label for="textform"> <p class="form-page__offer form-page__offer--title form-page__offer--textform">
+                ОПИШИТЕ СВОИ ЭМОЦИИ
+              </p>
+              <input class="form-page__input form-page__input--textarea" name="offer" id="textform" rows="5" type="textarea" placeholder="Можно прям в красках,
+               не стесняясь в выражениях" >
+            </label>
+            </div>
+            <div class="form__page-wrapper-white">
+              <button type="submit" class="btn form__btn">
+                Отправить форму
+              </button>
+              <p class="form-page__offer form__page-submit-title"><span>*</span> — обязательные поля</p>
+            </div>
+          </form>
         </div>
       </section>
     </main>
+
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <img
