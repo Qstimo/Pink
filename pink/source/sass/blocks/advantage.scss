@@ -27,17 +27,14 @@ color: #283645;
 }
 }
 
-.advantage-items__list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 123px;
-    
-}
+
 .advantage-items__item {
     text-align: center;
     margin-bottom: 25px;
     padding: 0 20px;
+    @media (min-width: 665px) {
+        text-align: start;
+    }
 }
 
 .advantage-items__title {
@@ -45,6 +42,7 @@ color: #283645;
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
+    margin-bottom: 24px;
 }
 .advantage-items__subtitle {font-style: normal;
     font-weight: 400;
@@ -54,25 +52,87 @@ color: #283645;
 
 .advantage-stats {
     display: none;
+    @media (min-width: 665px) {
+        display: flex;
+        padding: 102px 0 109px;
+        background-color: white;
+       
+       
+    }
+}
+.advantage-stats__img {
+    background-image: url(/img/TABLET/timer.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 260px;
+    height: 260px;
+    flex: 1 0 50%;
+}
+.advantage-stats__wrapper {
 }
 
+.advantage-stats__title {
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+}
+.advantage-stats__promo {
+    font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+}
+.advantage-stats__link {
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+text-decoration-line: underline;
+color: #D22856;
+}
 .advantage__img{
-    
+    background-image: url(/img/mob/iphone.png);
     margin-left: auto;
+    height: 320px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 50px;
     margin-right: auto;
     position: relative;
-    & img{
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
+    margin-top: -50px;
+    
+    
+   
+    @media (min-width: 665px) {
+        background-image: url(/img/TABLET/iphone3.png);
+        background-position-y: 60px;
+        width: 268px;
+        height: 547px;
+        order: 1;
+        flex: 1 0 49%;
+        margin: 0;
+
     }
-    &::after{
-        content: " ";
-        position: absolute;
-        width: 320px;
-        height: 50px;
-        background-color: rgb(255, 255, 255);
-        bottom: 0;
-        
+}
+.advantage-items__wrapper{
+    @media (min-width: 665px) {
+        display: flex;
+        justify-content: space-between;
+       
+}
+}
+.advantage-items__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 123px;
+    @media (min-width: 665px) {
+    order: 2;
+    
     }
+    
 }

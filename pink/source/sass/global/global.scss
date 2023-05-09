@@ -13,17 +13,54 @@ a {
   text-decoration: none;
   color: inherit;
 }
-.btn{
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 18px;
-color: inherit;
-border: 3px solid #FFFFFF;
-border-radius: 29px;
-// padding: 21px 38px;
-text-align: center;
-cursor: pointer;
-box-sizing: border-box;
+
+.btn {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: inherit;
+  border: 3px solid #FFFFFF;
+  border-radius: 29px;
+  // padding: 21px 38px;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
 }
+
+.slider__toggles {
+  display: flex;
+  margin: 0 auto 0 auto;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.slider__toggle {
+  width: 6px;
+  height: 6px;
+  font-size: 0;
+  padding: 0;
+  border-radius: 50px;
+  background-color: rgba(40, 54, 69, 0.3);
+  border: none;
+  margin-right: 20px;
+
+  cursor: pointer;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+
+}
+
+.slider__toggle--current {
+  outline: 3px solid #283645;
+  opacity: 1;
+}
+.slider__list {
+  margin-bottom: 41px;
+}
+

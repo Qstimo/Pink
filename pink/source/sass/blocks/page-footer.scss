@@ -5,14 +5,27 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @media (min-width: 665px) {
+        flex-direction: row;
+        padding: 0 20px;
+        justify-content: space-between;
+        align-items: center;
+        height: 127px;
+    }
 }
 .page-footer__wrapper {
 }
 .page-footer__logo {
     margin-bottom: 40px;
+    @media (min-width: 665px){
+        margin: 0;
+    }
 }
 .page-footer__social {
     margin-bottom: 53px;
+    @media (min-width: 665px){
+        margin: 0;
+    }
 }
 .social {
 

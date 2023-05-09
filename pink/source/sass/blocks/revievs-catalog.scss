@@ -3,20 +3,28 @@
 }
 
 .revievs__subtitle {
-    padding-bottom: 60px;
+    @media (min-width: 665px) {
+        padding: 40px 80px 80px;
+    }
 }
 
 .revievs-catalog__list {
-    max-width: 280px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .revievs-catalog__item {
     display: flex;
     flex-direction: column;
+    width: 280px;
+    @media (min-width: 665px) {
+        width: 300PX;
+      
+    }
 
 }
 
@@ -25,7 +33,23 @@
 .revievs-catalog__container {
     display: flex;
     align-items: center;
-    
+
+}
+
+.revievs-catalog__img--hit {
+    background-image: url("/img/mob/panorama-mob.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: contain;
+    width: 320px;
+    height: 127px;
+    background-position: center;
+    margin: 0 auto;
+    @media (min-width: 665px) {
+        width: 660PX;
+        height: 509px;
+        background-image: url(/img/TABLET/panorama-tablet.png);
+    }
 }
 
 .revievs-catalog__item--hit {
@@ -34,12 +58,72 @@
     margin-bottom: 20px;
     padding: 25px 10px 25px 17px;
     background-color: #F2F2F2;
+
 }
 
 .revievs-item__wrapper {
     padding: 25px 10px 25px 17px;
-    margin-bottom: 20px;
     background-color: #F2F2F2;
+    @media (min-width: 665px) {
+        height: 155px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.revievs-catalog__img {
+    width: 280PX;
+    height: 180PX;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    @media (min-width: 665px) {
+        width: 300PX;
+        height: 300px;
+    }
+}
+
+.revievs-catalog__img-1 {
+    background-image: url(/img/mob/photo-1-mobile.png);
+    @media (min-width: 665px) {
+        background-image: url(/img/TABLET/photo-1-tablet.png);
+    }
+}
+
+.revievs-catalog__img-2 {
+    background-image: url(/img/mob/photo-2-mobile.png);
+    @media (min-width: 665px) {
+        background-image: url(/img/TABLET/photo-2-tablet.png);
+    }
+}
+
+.revievs-catalog__img-3 {
+    background-image: url(/img/mob/photo-3-tablet.png);
+    @media (min-width: 665px) {
+        background-image: url(/img/TABLET/photo-3-tablet.png);
+    }
+}
+
+.revievs-catalog__img-4 {
+    background-image: url(/img/mob/photo-4-tablet.png);
+    @media (min-width: 665px) {
+        background-image: url(/img/TABLET/photo-4-tablet.png);
+    }
+}
+
+.revievs-catalog__img-5 {
+    background-image: url(/img/mob/photo-5-tablet.png);
+    @media (min-width: 665px) {
+        background-image: url(/img/TABLET/photo-5-tablet.png);
+    }
+}
+
+.revievs-catalog__img-6 {
+    background-image: url(/img/mob/photo-6-tablet.png);
+    @media (min-width: 665px) {
+        background-image: url(/img/TABLET/photo-6-tablet.png);
+    }
 }
 
 .revievs-catalog__title {
@@ -67,6 +151,10 @@
     margin-bottom: 27px;
     margin-top: 14px;
     display: block;
+    @media (min-width: 665px) {
+       flex: 1 0;
+       padding: 0;
+    }
 }
 
 .revievs-catalog__like {
@@ -86,6 +174,5 @@
     line-height: 24px;
     color: red;
     text-transform: uppercase;
-    padding-left: 3px ;
+    padding-left: 3px;
 }
-

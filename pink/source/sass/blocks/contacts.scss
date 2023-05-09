@@ -4,6 +4,10 @@
     background-position: bottom;
     background-repeat: no-repeat;
     padding-bottom: 200px;
+    @media (min-width: 665px){
+        background-image: url(/img/TABLET/map-tablet.png);
+        padding-bottom: 350px;
+    }
 }
 .contacts__title {
     font-style: normal;
@@ -12,14 +16,32 @@ font-size: 24px;
 line-height: 120%;
 text-align: center;
 padding-top: 50px;
-margin-bottom: 50px;
+padding-bottom: 50px;
+@media (min-width: 665px){
+
+font-style: normal;
+font-weight: 300;
+font-size: 40px;
+line-height: 54px;
+color: #283645;
+padding: 50px 125px;
+}
 }
 .contacts__list {
     text-align: center;
+    @media (min-width: 665px){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
    
 }
 .contacts__item {
     margin-bottom: 31px;
+    @media (min-width: 665px){
+        padding: 0 50px;
+    }
 }
 .contacts__caption {
     font-weight: 700;
