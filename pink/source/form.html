@@ -11,35 +11,25 @@
     <main class="page-main">
       <div class="promo__wrapper form">
         <header class="page-header">
-          <a href="" class="page-header__logo">
-            <img
-              src="/img/logo.svg"
-              width="74px"
-              height="23px"
-              alt="Pink"
-              class="page-header__img"
-            />
-          </a>
+          <a href="index.html" class="page-header__logo"> </a>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <nav class="main-nav main-nav__wrapper">
-            
-              <ul class="main-nav__list">
-                <li class="main-nav__item">
-                  <a class="main-nav__link"> Главная </a>
-                </li>
-                <li class="main-nav__item">
-                  <a href="catalog.html" class="main-nav__link"> Фотографии </a>
-                </li>
-                <li class="main-nav__item">
-                  <a href="#" class="main-nav__link"> Конкурс </a>
-                </li>
-                <li class="main-nav__item">
-                  <a href="#" class="main-nav__link"> HTML Academy </a>
-                </li>
-              </ul>
-            
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link"> Главная </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="catalog.html" class="main-nav__link"> Фотографии </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link"> Конкурс </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link"> HTML Academy </a>
+              </li>
+            </ul>
           </nav>
         </header>
         <div class="form-offer__wrapper">
@@ -49,160 +39,198 @@
         </div>
       </div>
       <section class="form-pade">
-        <div class="form__page-wrapper">
-          <h2 class="form-page__title">
-            Поделитесь своей историей и получите шанс выиграть ценный приз —
-            1000 миль на вашу бонусную карту!
-          </h2>
-          <form action="#" method="post">
-            <div class="form__page-wrapper-white">
-              <label for="name" class="form-page__label form-page__label--uzer"
-                ><p class="form-page__offer">ФАМИЛИЯ:</p>
+        <h2 class="form-page__title">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000
+          миль на вашу бонусную карту!
+        </h2>
+
+        <form class="form__page-wrapper" action="#" method="post">
+          <div class="form__page-wrapper-white form__page-wrapper--uzer">
+            <label for="name" class="form-page__label form-page__label--uzer"
+              ><p class="form-page__offer">ФАМИЛИЯ:</p>
+              <input
+                class="form-page__input"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Укажите фамилию *"
+              />
+            </label>
+            <label for="family" class="form-page__label form-page__label--uzer"
+              ><p class="form-page__offer">ИМЯ:</p>
+              <input
+                class="form-page__input"
+                type="text"
+                name="family"
+                id="family"
+                placeholder="Введите ваше имя *"
+              />
+            </label>
+            <label
+              for="firstname"
+              class="form-page__label form-page__label--uzer"
+              ><p class="form-page__offer">ОТЧЕСТВО:</p>
+              <input
+                class="form-page__input"
+                type="text"
+                name="firstname"
+                id="firstname"
+                placeholder="Ну и отчество тоже"
+              />
+            </label>
+          </div>
+          <div class="form__page-wrapper-grey form__page-wrapper--journey">
+            <p class="form-page__offer form-page__offer--title">
+              Ваши безбашенные достижения в путешествии
+            </p>
+            <label for="selfi" class="form-page__label">
+              <input
+                class="custom-checkbox"
+                type="checkbox"
+                checked
+                value="Сделал селфи с акулой"
+                id="selfi"
+              />
+              <span class="form-page__cheek"> Сделал селфи с акулой</span>
+            </label>
+            <label for="beach" class="form-page__label">
+              <input
+                class="custom-checkbox"
+                type="checkbox"
+                checked
+                value="Обгорел на пляже"
+                id="beach"
+              />
+              <span class="form-page__cheek"> Обгорел на пляже</span>
+            </label>
+            <label for="norris" class="form-page__label">
+              <input
+                class="custom-checkbox"
+                type="checkbox"
+                checked
+                value="Видел Чака Норриса"
+                id="norris"
+              />
+              <span class="form-page__cheek"> Видел Чака Норриса</span>
+            </label>
+            <label for="suvenir" class="form-page__label">
+              <input
+                class="custom-checkbox"
+                type="checkbox"
+                value="Видел Чака Норриса"
+                id="suvenir"
+              />
+              <span class="form-page__cheek"> Накупил сувениров</span>
+            </label>
+            <label for="tower" class="form-page__label">
+              <input
+                class="custom-checkbox"
+                type="checkbox"
+                checked
+                value="Удержал башню"
+                id="tower"
+              />
+              <span class="form-page__cheek"> Удержал башню</span>
+            </label>
+            <label for="hotel" class="form-page__label">
+              <input
+                class="custom-checkbox"
+                type="checkbox"
+                value="Разгромил отель"
+                id="hotel"
+              />
+              <span class="form-page__cheek"> Разгромил отель</span>
+            </label>
+          </div>
+          <div class="form__page-wrapper-white form__page-wrapper--contacts">
+            <p class="form-page__offer form-page__offer--title">
+              контактная информация
+            </p>
+            <label
+              class="form-page__label form-page__label--uzer form-page__label--contact"
+              for="phone"
+              ><p class="form-page__offer">НОМЕР ТЕЛЕФОНА</p>
+              <div class="form-page__input--phone">
                 <input
                   class="form-page__input"
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="Укажите фамилию *"
-                />
-              </label>
-              <label for="family" class="form-page__label form-page__label--uzer"
-                ><p class="form-page__offer">ИМЯ:</p>
+                  name="phone"
+                  type="tel"
+                  placeholder="Номер, пожалуйста"
+                  id="phone"
+                /></div
+            ></label>
+            <label
+              class="form-page__label form-page__label--contact form-page__label--uzer"
+              for="mail"
+            >
+              <p class="form-page__offer">АДРЕС ПОЧТЫ</p>
+              <div class="form-page__input--mail">
                 <input
                   class="form-page__input"
-                  type="text"
-                  name="family"
-                  id="family"
-                  placeholder="Введите ваше имя *"
+                  name="mail"
+                  type="email"
+                  placeholder="Введите почту *"
+                  id="mail"
                 />
-              </label>
-              <label for="firstname" class="form-page__label form-page__label--uzer"
-                ><p class="form-page__offer">ОТЧЕСТВО:</p>
-                <input
-                  class="form-page__input"
-                  type="text"
-                  name="firstname"
-                  id="firstname"
-                  placeholder="Ну и отчество тоже"
-                />
-              </label>
-            </div>
-            <div class="form__page-wrapper-grey">
-              <p class="form-page__offer form-page__offer--title">
-                Ваши безбашенные достижения в путешествии
-              </p>
-              <label for="selfi" class="form-page__label">
-                <input
-                  type="checkbox"
-                  checked
-                  value="Сделал селфи с акулой"
-                  id="selfi"
-                />
-                <span class="form-page__cheek"> Сделал селфи с акулой</span>
-              </label>
-              <label for="beach" class="form-page__label">
-                <input
-                  type="checkbox"
-                  checked
-                  value="Обгорел на пляже"
-                  id="beach"
-                />
-                <span class="form-page__cheek"> Обгорел на пляже</span>
-              </label>
-              <label for="norris" class="form-page__label">
-                <input
-                  type="checkbox"
-                  checked
-                  value="Видел Чака Норриса"
-                  id="norris"
-                />
-                <span class="form-page__cheek"> Видел Чака Норриса</span>
-              </label>
-              <label for="suvenir" class="form-page__label">
-                <input
-                  type="checkbox"
-                  
-                  value="Видел Чака Норриса"
-                  id="suvenir"
-                />
-                <span class="form-page__cheek"> Накупил сувениров</span>
-              </label>
-              <label for="tower" class="form-page__label">
-                <input
-                  type="checkbox"
-                  checked
-                  value="Удержал башню"
-                  id="tower"
-                />
-                <span class="form-page__cheek"> Удержал башню</span>
-              </label>
-              <label for="hotel" class="form-page__label">
-                <input
-                  type="checkbox"
-                  
-                  value="Разгромил отель"
-                  id="hotel"
-                />
-                <span class="form-page__cheek"> Разгромил отель</span>
-              </label>
-            </div>
-            <div class="form__page-wrapper-white">
-              <label class="form-page__label form-page__label--uzer" for="phone"><p class="form-page__offer">НОМЕР ТЕЛЕФОНА</p>
-                <input class="form-page__input" name="phone" type="tel" placeholder="Номер, пожалуйста" id="phone">
-              </label>
-              <label class="form-page__label form-page__label--uzer" for="mail" ><p class="form-page__offer">АДРЕС ПОЧТЫ</p>
-                <input class="form-page__input" name="mail" type="email" placeholder="Введите почту *" id="mail">
-              </label>
-            </div>
-            <div class="form__page-wrapper-grey">
-              <p class="form-page__offer form-page__offer--title">
-                С каким приложением
-путешествовали?
-              </p>
-              <label for="ios" class="form-page__label">
-                <input
-                  type="radio"
-                  checked
-                  value="Pink для iOS"
-                  id="ios"
-                />
-                <span class="form-page__cheek"> Pink для iOS</span>
-              </label>
-                <label for="Android" class="form-page__label">
-                  <input
-                    type="radio"
-                    
-                    value="Pink на Android"
-                    id="Android"
-                  />
-                  <span class="form-page__cheek"> Pink на Android</span>
-                </label>
-                <label for="win" class="form-page__label">
-                  <input
-                    type="radio"
-                    
-                    value="Windows Phone"
-                    id="win"
-                  />
-                  <span class="form-page__cheek"> Windows Phone</span>
-                </label>
-            </div>
-            <div class="form__page-wrapper-white">
-               <label for="textform"> <p class="form-page__offer form-page__offer--title form-page__offer--textform">
+              </div>
+            </label>
+          </div>
+          <div class="form__page-wrapper-grey form__page-wrapper--platform">
+            <p class="form-page__offer form-page__offer--title">
+              С каким приложением путешествовали?
+            </p>
+            <label for="ios" class="form-page__label">
+              <input
+                class="custom-radio"
+                type="radio"
+                checked
+                value="Pink для iOS"
+                id="ios"
+              />
+              <span class="form-page__cheek"> Pink для iOS</span>
+            </label>
+            <label for="Android" class="form-page__label">
+              <input
+                class="custom-radio"
+                type="radio"
+                value="Pink на Android"
+                id="Android"
+              />
+              <span class="form-page__cheek"> Pink на Android</span>
+            </label>
+            <label for="win" class="form-page__label">
+              <input
+                class="custom-radio"
+                type="radio"
+                value="Windows Phone"
+                id="win"
+              />
+              <span class="form-page__cheek"> Windows Phone</span>
+            </label>
+          </div>
+          <div class="form__page-wrapper-white form__page-wrapper--emotions">
+            <label class="form-page__label" for="textform">
+              <p
+                class="form-page__offer form-page__offer--title form-page__offer--textform"
+              >
                 ОПИШИТЕ СВОИ ЭМОЦИИ
               </p>
-              <input class="form-page__input form-page__input--textarea" name="offer" id="textform" rows="5" type="textarea" placeholder="Можно прям в красках,
-               не стесняясь в выражениях" >
+              <textarea
+                class="form-page__input form-page__input--textarea"
+                name="offer"
+                id="textform"
+                type="textarea"
+                placeholder="Можно прям в красках, не стесняясь в выражениях"
+              ></textarea>
             </label>
-            </div>
-            <div class="form__page-wrapper-white">
-              <button type="submit" class="btn form__btn">
-                Отправить форму
-              </button>
-              <p class="form-page__offer form__page-submit-title"><span>*</span> — обязательные поля</p>
-            </div>
-          </form>
-        </div>
+          </div>
+          <div class="form__page-wrapper-white form__page-wrapper--btn">
+            <button type="submit" class="btn form__btn">Отправить форму</button>
+            <p class="form-page__offer form__page-submit-title">
+              <span>*</span> — обязательные поля
+            </p>
+          </div>
+        </form>
       </section>
     </main>
 

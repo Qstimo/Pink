@@ -1,18 +1,19 @@
-.catalog-offer__wrapper{
-    padding: 36px 74px 84px 74px ;
+.catalog-offer__wrapper {
+    padding: 36px 74px 84px 74px;
+
     @media (min-width: 665px) {
         padding: 50px 150px;
-        
- }
+
+    }
 }
-.catalog-offer__wrapper h2{
-    
+
+.catalog-offer__wrapper h2 {
+
     @media (min-width: 665px) {
         font-style: normal;
         font-weight: 300;
         font-size: 50px;
         line-height: 68px;
-        
-        
- }
+
+    }
 }
