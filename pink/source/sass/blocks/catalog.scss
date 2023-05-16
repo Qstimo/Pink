@@ -3,7 +3,10 @@
 
     @media (min-width: 665px) {
         padding: 50px 150px;
-
+    }
+    @media (min-width: 1200px) {
+        margin: 30px auto;
+        width: 357px;
     }
 }
 
@@ -14,6 +17,5 @@
         font-weight: 300;
         font-size: 50px;
         line-height: 68px;
-
     }
 }

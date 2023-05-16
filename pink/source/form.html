@@ -18,7 +18,7 @@
           <nav class="main-nav main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__item">
-                <a class="main-nav__link"> Главная </a>
+                <a class="main-nav__link" href="index.html"> Главная </a>
               </li>
               <li class="main-nav__item">
                 <a href="catalog.html" class="main-nav__link"> Фотографии </a>
@@ -150,29 +150,27 @@
               class="form-page__label form-page__label--uzer form-page__label--contact"
               for="phone"
               ><p class="form-page__offer">НОМЕР ТЕЛЕФОНА</p>
-              <div class="form-page__input--phone">
-                <input
-                  class="form-page__input"
-                  name="phone"
-                  type="tel"
-                  placeholder="Номер, пожалуйста"
-                  id="phone"
-                /></div
-            ></label>
+
+              <input
+                class="form-page__input form-page__input--phone"
+                name="phone"
+                type="tel"
+                placeholder="Номер, пожалуйста"
+                id="phone"
+            /></label>
             <label
               class="form-page__label form-page__label--contact form-page__label--uzer"
               for="mail"
             >
               <p class="form-page__offer">АДРЕС ПОЧТЫ</p>
-              <div class="form-page__input--mail">
-                <input
-                  class="form-page__input"
-                  name="mail"
-                  type="email"
-                  placeholder="Введите почту *"
-                  id="mail"
-                />
-              </div>
+
+              <input
+                class="form-page__input form-page__input--mail"
+                name="mail"
+                type="email"
+                placeholder="Введите почту *"
+                id="mail"
+              />
             </label>
           </div>
           <div class="form__page-wrapper-grey form__page-wrapper--platform">
@@ -227,7 +225,11 @@
           <div class="form__page-wrapper-white form__page-wrapper--btn">
             <button type="submit" class="btn form__btn">Отправить форму</button>
             <p class="form-page__offer form__page-submit-title">
-              <span>*</span> — обязательные поля
+              <span>*</span> — обязательные
+              <span class="form__page-submit-title--desktop"
+                >для заполнения</span
+              >
+              поля
             </p>
           </div>
         </form>

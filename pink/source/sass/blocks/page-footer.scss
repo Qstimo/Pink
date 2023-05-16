@@ -12,6 +12,9 @@
         align-items: center;
         height: 127px;
     }
+    @media (min-width: 1200px){
+        height: 200px;
+    }
 }
 .page-footer__wrapper {
 }

@@ -10,6 +10,9 @@
     @media (min-width: 665px){
         height: 110px;
     }
+    @media (min-width: 1200px){
+        padding: 0 110px;
+    }
 }
 
 .page-header__logo {
@@ -24,6 +27,13 @@
         height: 100px;
         width: 147px;
         background-image: url(/img/TABLET/android-logo.svg);
+        background-position: 50% 35%;
+
+    }
+    @media (min-width: 1200px){
+        height: 100px;
+        width: 150px;
+        background-image: url(/img/desktop/logotype-white-desktop.svg);
         background-position: 50% 35%;
 
     }

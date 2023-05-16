@@ -1,5 +1,21 @@
-
-
+.advantage-revievs{
+    @media (min-width: 1200px) {
+        padding: 190PX 110px 0;
+        background-image: url(/img/desktop/quotes.png);
+        background-repeat: no-repeat;
+        background-position: 50% 15%;
+    }
+}
+.revievs{
+    @media (min-width: 1200px) {
+        margin: 0 auto;
+        width: 688px;
+    }
+}
+.revievs__list{
+    
+  
+}
 .revievs__title {
     margin-bottom: 31px;
     font-style: normal;
@@ -50,5 +66,12 @@
     @media (min-width: 665px) {
         display: flex;
         flex-direction: column;
+    }
+  }
+
+  .revievs__item{
+    @media (min-width: 1200px) {
+        
+        
     }
   }

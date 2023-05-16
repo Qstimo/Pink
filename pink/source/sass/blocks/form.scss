@@ -12,6 +12,10 @@
         }
     }
 
+    @media (min-width: 1200px) {
+        padding: 70px 130px;
+    }
+
 }
 
 .form {
@@ -22,6 +26,13 @@
         height: 450px;
         background-position: top;
     }
+
+    @media (min-width: 1200px) {
+        background-image: url(/img/TABLET/back-tablet.png);
+        height: 450px;
+        background-position: top;
+    }
+
 }
 
 //forms
@@ -78,7 +89,7 @@
     text-align: center;
     color: #283645;
 
-    & span {
+    & span:first-of-type {
         color: red;
     }
 }
@@ -94,9 +105,8 @@
     @media (min-width: 665px) {
         display: flex;
         align-items: center;
-
-
     }
+
 }
 
 .form-page__input {
@@ -113,7 +123,7 @@
     }
 
     @media (min-width: 665px) {
-        flex: 1 0;
+        flex: 1 0 auto;
     }
 
 }
@@ -131,49 +141,49 @@
 
     .form-page__input--phone,
     .form-page__input--mail {
-        position: relative;
-
-        & .form-page__input {
-            width: 496px;
-            padding-right: 60px;
-        }
-
-        &::before {
-            content: " ";
-            width: 56px;
-            height: 56px;
-            background-color: #E5E5E5;
-            right: 1px;
-            top: 1px;
-            bottom: 0;
-            position: absolute;
-            z-index: 2;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
+        background-repeat: no-repeat;
+        background-position: right;
+        padding-right: 60PX;
+        width: 371px;
+        
     }
 
     .form-page__input--phone {
-        &::before {
-            background-image: url(/img/TABLET/phone-icon.svg);
-            top: 2px
-        }
+        background-image: url(/img/desktop/telepfone.png);
+
     }
 
     .form-page__input--mail {
-        &::before {
-            background-image: url(/img/TABLET/mail-icon.png);
-            top: 1, 5px;
-        }
-
+        background-image: url(/img/desktop/mes.png);
     }
+
 }
 
+// .form-page__input--phone,
+// .form-page__input--mail {
+//     @media (min-width: 1200px){
+
+// }
+
+
+.form-pade {
+    @media (min-width: 1200px) {
+        padding: 0 130px;
+    }
+}
 
 
 .form__page-wrapper {
     display: flex;
     flex-direction: column;
+
+    @media (min-width: 1200px) {
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 50px
+    }
+
 }
 
 .form__page-wrapper-white {
@@ -213,6 +223,17 @@
         border: none;
         margin: 0;
     }
+
+    @media (min-width: 1200px) {
+        flex: 1 1 400px;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 300px;
+
+    }
 }
 
 .form__page-wrapper--journey {
@@ -228,6 +249,27 @@
             left: 22%;
         }
     }
+
+    @media (min-width: 1200px) {
+        padding: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+
+        &label {
+            margin: 0;
+        }
+
+        & .form-page__label {
+
+            @media (min-width: 1200px) {
+                flex: 1 1 200px;
+            }
+        }
+    }
+
 
 }
 
@@ -252,6 +294,13 @@
         }
     }
 
+    @media (min-width: 1200px) {
+
+        display: flex;
+        justify-content: space-between;
+        gap: 60px;
+        flex: 1 0;
+    }
 }
 
 .form__page-wrapper--platform {
@@ -268,6 +317,12 @@
         }
     }
 
+    @media (min-width: 1200px) {
+        flex: 1 1 350px;
+        padding: 60px 70px;
+        box-sizing: border-box;
+        height: 300px;
+    }
 
 }
 
@@ -287,6 +342,10 @@
         }
     }
 
+    @media (min-width: 1200px) {
+        flex: 1 0 900px;
+    }
+
 }
 
 .form__page-wrapper--btn {
@@ -299,9 +358,22 @@
         border: none;
         padding: 0;
     }
+
+    @media (min-width: 1200px) {
+        flex: 1 0;
+    }
 }
 
-.custom-radio, .custom-checkbox {
+.form__page-submit-title--desktop {
+    display: none;
+
+    @media (min-width: 1200px) {
+        display: inline;
+    }
+}
+
+.custom-radio,
+.custom-checkbox {
     position: absolute;
     z-index: -1;
     opacity: 0;
@@ -310,12 +382,13 @@
 .custom-radio:checked+.form-page__cheek::after {
     display: inline;
 }
+
 .custom-checkbox:checked+.form-page__cheek::before {
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(/img/tick.png);
 }
-  
+
 .form-page__cheek {
     padding-left: 50px;
     font-family: 'Open Sans';
@@ -331,7 +404,7 @@
         height: 37px;
         background-color: white;
         border-radius: 50%;
-        outline: 2px solid  #bebebe;
+        outline: 2px solid #bebebe;
         left: 0;
         position: absolute;
     }
@@ -349,7 +422,7 @@
     }
 }
 
-.form__page-wrapper--journey .form-page__cheek::before  {
+.form__page-wrapper--journey .form-page__cheek::before {
     border-radius: 0px;
 }
 

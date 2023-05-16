@@ -1,5 +1,4 @@
-
-.advantage__container-bg{
+.advantage__container-bg {
     background-image: url(/img/mob/grey-background.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,31 +8,100 @@
 
 .advantage__title {
     font-family: 'Open Sans';
-font-style: normal;
-font-weight: 300;
-font-size: 24px;
-line-height: 120%;
-margin-top: 46px;
-text-align: center;
-color: #283645;
-@media (min-width: 665px){
-    font-size: 40px;
+    font-style: normal;
     font-weight: 300;
-   
-    &+p{
-        padding: 0 100px;
-        margin: 0;
+    font-size: 24px;
+    line-height: 120%;
+    margin-top: 46px;
+    text-align: center;
+    color: #283645;
+
+    @media (min-width: 665px) {
+        font-size: 40px;
+        font-weight: 300;
+
+        &+p {
+            padding: 0 100px;
+            margin: 0;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 50px;
+        line-height: 68px;
+        margin-top: 72px;
+
+        &+p {
+            padding: 0 250px;
+        }
     }
 }
+
+.advantage-items__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 123px;
+
+    @media (min-width: 665px) {
+        order: 2;
+    }
+    @media (min-width: 1200px){
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 110px;
+    }
+
+
 }
-
-
 .advantage-items__item {
     text-align: center;
     margin-bottom: 25px;
     padding: 0 20px;
+
     @media (min-width: 665px) {
         text-align: start;
+    }
+    @media (min-width: 1200px){
+        flex: 0 0 300px;
+        
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+}
+.items__img{
+    display: none;
+    @media (min-width: 1200px){
+    display: block;
+    flex: 1 0 350px;
+    background-position: top;
+    background-repeat: no-repeat;
+
+    }
+}
+.advantage-items__item--mood{
+    @media (min-width: 1200px){
+        & .items__img{
+            background-image: url(/img/desktop/emotions.png);
+        }
+    }
+}
+.advantage-items__item--world{
+    @media (min-width: 1200px){
+        & .items__img{
+            background-image: url(/img/desktop/world.png);
+        }
+    }
+}
+.advantage-items__item--friend{
+    @media (min-width: 1200px){
+        & .items__img{
+            background-image: url(/img/desktop/friend.png);
+        }
     }
 }
 
@@ -43,23 +111,51 @@ color: #283645;
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 24px;
+
+    @media (min-width: 1200px) {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+        padding: 0 25px;
+        margin-bottom: 35px;
+    }
 }
-.advantage-items__subtitle {font-style: normal;
+
+.advantage-items__subtitle {
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
+
+    @media (min-width: 1200px) {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        padding: 0 25px;
+        text-align: center;
+    }
 }
 
 .advantage-stats {
     display: none;
+
     @media (min-width: 665px) {
         display: flex;
         padding: 102px 0 109px;
         background-color: white;
-       
-       
+        
+
     }
+    @media (min-width: 1200px) {
+            background-color: #F2F2F2;
+            padding: 110PX 110PX 60px;
+    }
+
+
 }
+
 .advantage-stats__img {
     background-image: url(/img/TABLET/timer.png);
     background-repeat: no-repeat;
@@ -68,33 +164,52 @@ color: #283645;
     width: 260px;
     height: 260px;
     flex: 1 0 50%;
+    @media (min-width: 1200px){
+        background-image: url(/img/desktop/timer.svg);
+        width: 298px;
+        height: 345px;
+    }
 }
+
 .advantage-stats__wrapper {
+    @media (min-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+}
+
+
 }
 
 .advantage-stats__title {
     font-family: 'Open Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 30px;
-line-height: 36px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    @media (min-width: 1200px){
+        
+    }
 }
+
 .advantage-stats__promo {
     font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
 }
+
 .advantage-stats__link {
     font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 30px;
-text-decoration-line: underline;
-color: #D22856;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-decoration-line: underline;
+    color: #D22856;
 }
-.advantage__img{
+
+.advantage__img {
     background-image: url(/img/mob/iphone.png);
     margin-left: auto;
     height: 320px;
@@ -105,8 +220,9 @@ color: #D22856;
     position: relative;
     margin-top: -50px;
     
-    
-   
+
+
+
     @media (min-width: 665px) {
         background-image: url(/img/TABLET/iphone3.png);
         background-position-y: 60px;
@@ -117,22 +233,16 @@ color: #D22856;
         margin: 0;
 
     }
+    @media (min-width: 1200px){
+        display: none;
+    }
 }
-.advantage-items__wrapper{
+
+.advantage-items__wrapper {
     @media (min-width: 665px) {
         display: flex;
         justify-content: space-between;
-       
-}
-}
-.advantage-items__list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 123px;
-    @media (min-width: 665px) {
-    order: 2;
-    
+
     }
-    
 }
+

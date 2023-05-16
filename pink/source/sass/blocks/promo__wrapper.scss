@@ -13,6 +13,13 @@
         background-position: 50% 100%, 50% 0;
         height: 730px;
     }
+    @media (min-width: 1200px){
+        background-image: url(/img/desktop/bk.png);
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        
+    }
 
 }
 
@@ -20,6 +27,12 @@
     background-size: cover;
     @media (min-width: 665px) {
         background-image:  url(/img/TABLET/back-tablet.png);
+        background-repeat: no-repeat;
+        height: 440px;
+        background-position: 50% 0%;
+    }
+    @media (min-width: 1200px) {
+        background-image:  url(/img/desktop/back-catalog.png);
         background-repeat: no-repeat;
         height: 440px;
         background-position: 50% 0%;

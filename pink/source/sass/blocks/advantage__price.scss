@@ -2,11 +2,19 @@
     background-image: url(/img/mob/grey-background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 90px;
-    padding-bottom: 50px;
+    @media (min-width: 1200px){
+    background-image: url(/img/desktop/background-grey.png);
+    }
 }
 
-.price {}
+.price {
+    padding-top: 90px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    @media (min-width: 1200px){
+        padding: 110px 110px 50px;
+    }
+}
 
 .price__table {
     display: flex;
