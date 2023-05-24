@@ -17,12 +17,18 @@
 
 .page-header__logo {
     
-    
+    z-index: 5;
     background-image: url(/img/logo.svg);
     height: 23px;
     width: 74px;
     background-repeat: no-repeat;
     background-position: center;
+    &:active{
+        opacity: 0.3;
+    }
+    // &:hover{
+    //     fill: ;
+    // }
     @media (min-width: 665px){
         height: 100px;
         width: 147px;
@@ -33,6 +39,7 @@
     @media (min-width: 1200px){
         height: 100px;
         width: 150px;
+        margin-right: 50px;
         background-image: url(/img/desktop/logotype-white-desktop.svg);
         background-position: 50% 35%;
 
